@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Distributor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <h1>Content Distributor</h1>
+        <p class="intro">
+          Enter a topic or rough idea to generate insights, angles, hooks, and a
+          LinkedIn post.
+        </p>
+
+        <label class="label" for="topic">Topic</label>
+        <textarea
+          id="topic"
+          rows="4"
+          placeholder="Example: AI tools for small business marketing"
+        ></textarea>
+
+        <button id="generate-button" type="button">Generate Content</button>
+      </section>
+
+      <section id="output" class="card hidden" aria-live="polite">
+        <div class="output-header">
+          <h2>Generated Content</h2>
+          <p id="summary"></p>
+        </div>
+
+        <div id="insights" class="stack"></div>
+
+        <div class="linkedin">
+          <h2>LinkedIn Post</h2>
+          <article id="linkedin-post" class="linkedin-post"></article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
