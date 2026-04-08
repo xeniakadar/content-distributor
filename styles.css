@@ -70,6 +70,11 @@ button:hover {
   background: #195ec6;
 }
 
+button:disabled {
+  background: #8daee5;
+  cursor: wait;
+}
+
 .hidden {
   display: none;
 }
@@ -114,4 +119,14 @@ button:hover {
   border-radius: 10px;
   padding: 16px;
   line-height: 1.5;
+}
+
+.status-message {
+  min-height: 24px;
+  margin-top: 16px;
+  color: #2e4d85;
+}
+
+.status-message.error {
+  color: #b42318;
 }

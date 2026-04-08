@@ -15,14 +15,20 @@
           LinkedIn post.
         </p>
 
-        <label class="label" for="topic">Topic</label>
-        <textarea
-          id="topic"
-          rows="4"
-          placeholder="Example: AI tools for small business marketing"
-        ></textarea>
+        <form id="generator-form">
+          <label class="label" for="topic">Topic</label>
+          <textarea
+            id="topic"
+            rows="6"
+            placeholder="Paste source text, a topic, notes, or a rough idea."
+          ></textarea>
 
-        <button id="generate-button" type="button">Generate Content</button>
+          <button id="generate-button" type="submit">
+            <span id="button-text">Generate Content</span>
+          </button>
+        </form>
+
+        <p id="status-message" class="status-message" aria-live="polite"></p>
       </section>
 
       <section id="output" class="card hidden" aria-live="polite">
