@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.page {
+  width: min(960px, calc(100% - 32px));
+  margin: 40px auto;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dbe3f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(23, 32, 51, 0.06);
+}
+
+.card + .card {
+  margin-top: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+.intro,
+.angle-hooks {
+  color: #52607a;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 14px;
+  border: 1px solid #bcc8db;
+  border-radius: 10px;
+  font: inherit;
+  margin-bottom: 16px;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  background: #1f6feb;
+  color: #fff;
+  padding: 12px 18px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #195ec6;
+}
+
+button:disabled {
+  background: #8daee5;
+  cursor: wait;
+}
+
+.hidden {
+  display: none;
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+.insight-card {
+  border: 1px solid #dbe3f0;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fbfcff;
+}
+
+.angle-list,
+.hook-list {
+  padding-left: 20px;
+}
+
+.angle-item + .angle-item {
+  margin-top: 12px;
+}
+
+.output-header {
+  border-bottom: 1px solid #e7edf7;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+}
+
+.linkedin {
+  margin-top: 24px;
+  border-top: 1px solid #e7edf7;
+  padding-top: 20px;
+}
+
+.linkedin-post {
+  white-space: pre-wrap;
+  background: #f8faff;
+  border: 1px solid #dbe3f0;
+  border-radius: 10px;
+  padding: 16px;
+  line-height: 1.5;
+}
+
+.status-message {
+  min-height: 24px;
+  margin-top: 16px;
+  color: #2e4d85;
+}
+
+.status-message.error {
+  color: #b42318;
+}
